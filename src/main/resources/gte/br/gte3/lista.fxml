@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gte.br.gte3.Controllers.ListaControler">
+    <children>
+        <ImageView fitHeight="402.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@media/backprincipal.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="33.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickEditar" prefHeight="41.0" prefWidth="186.0" styleClass="input" stylesheets="@Style/novo.css" text="Editar" textFill="WHITE" />
+        <Button layoutX="493.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickExcluir" prefHeight="41.0" prefWidth="186.0" styleClass="input" stylesheets="@Style/novo.css" text="Excluir" textFill="WHITE" />
+        <TableView fx:id="tableview" layoutX="33.0" layoutY="97.0" prefHeight="192.0" prefWidth="646.0" styleClass="input" stylesheets="@Style/novo.css">
+            <columns>
+                <TableColumn fx:id="colTitulo" prefWidth="75.0" text="Título" />
+                <TableColumn fx:id="colDescricao" prefWidth="75.0" text="Descrição" />
+                <TableColumn fx:id="colStatus" prefWidth="82.0" text="Status" />
+                <TableColumn fx:id="colDataInicio" minWidth="9.0" prefWidth="106.0" text="Data De Inicio" />
+                <TableColumn fx:id="colDataVencimento" prefWidth="131.0" text="Data Vencimento" />
+                <TableColumn fx:id="colDisciplina" prefWidth="89.0" text="Disciplina" />
+                <TableColumn fx:id="colCategoria" prefWidth="87.0" text="Categoria" />
+            </columns>
+        </TableView>
+        <Button layoutX="203.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickCategorizacao" prefHeight="8.0" prefWidth="308.0" styleClass="botao" stylesheets="@Style/novo.css" text="Categorização" textFill="WHITE" />
+        <Text layoutX="194.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTAGEM DE TAREFAS" textAlignment="JUSTIFY" wrappingWidth="325.32568359375">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#3627b5" />
+                        <Stop color="#ff0053ad" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+        <Button layoutX="233.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickadd" prefHeight="41.0" prefWidth="248.0" styleClass="input" stylesheets="@Style/novo.css" text="Adicionar " textFill="WHITE">
+            <opaqueInsets>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </opaqueInsets>
+            <font>
+                <Font name="Lato Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="atualizar" layoutX="54.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickAtualizar" text="Atualizar" />
+        <Button fx:id="logout" layoutX="586.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickLogot" text="Log-out" />
+    </children>
+</Pane>

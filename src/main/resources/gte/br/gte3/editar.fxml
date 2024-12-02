@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="662.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gte.br.gte3.Controllers.EditarControler">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="1178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../LP1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="444.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECIONE A TAREFA:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.21176470816135406" green="0.15294118225574493" blue="0.7098039388656616" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.32549020648002625" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="categoria" layoutX="326.0" layoutY="522.0" prefHeight="31.0" prefWidth="526.0" promptText="Categoria" />
+      <TextField fx:id="titulo" layoutX="326.0" layoutY="234.0" prefHeight="31.0" prefWidth="526.0" promptText="Título" />
+      <TextField fx:id="descrição" layoutX="327.0" layoutY="283.0" prefHeight="31.0" prefWidth="526.0" promptText="Descrição" />
+      <TextField fx:id="status" layoutX="327.0" layoutY="332.0" prefHeight="31.0" prefWidth="526.0" promptText="Status" />
+      <TextField fx:id="datadeinicio" layoutX="326.0" layoutY="375.0" prefHeight="31.0" prefWidth="526.0" promptText="Data de Início" />
+      <TextField fx:id="datadevencimento" layoutX="327.0" layoutY="424.0" prefHeight="31.0" prefWidth="526.0" promptText="Data de Vencimento" />
+      <TextField fx:id="disciplina" layoutX="326.0" layoutY="473.0" prefHeight="31.0" prefWidth="526.0" promptText="Disciplina" />
+      <Text layoutX="530.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDITAR:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.21176470816135406" green="0.15294118225574493" blue="0.7098039388656616" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.32549020648002625" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button layoutX="542.0" layoutY="578.0" mnemonicParsing="false" onAction="#clickSalvar" prefHeight="43.0" prefWidth="95.0" text="SALVAR" />
+      <Text fill="WHITE" layoutX="328.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Título" />
+      <Text fill="WHITE" layoutX="326.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
+      <Text fill="WHITE" layoutX="326.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Text fill="WHITE" layoutX="327.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data De Inicio" />
+      <Text fill="WHITE" layoutX="327.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data De Vencimento" />
+      <Text fill="WHITE" layoutX="326.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina" />
+      <Text fill="WHITE" layoutX="326.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
+      <ComboBox fx:id="cbxtarefa" layoutX="324.0" layoutY="142.0" prefHeight="26.0" prefWidth="526.0" promptText="Selecione a Tarefa" />
+   </children>
+</AnchorPane>

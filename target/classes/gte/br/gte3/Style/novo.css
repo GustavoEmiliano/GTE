@@ -1,0 +1,17 @@
+.input{
+   -fx-background-color: "#9d4edd";
+}
+
+.botao{
+-fx-background-color: "#ff477e";
+-fx-background-radius: 20px;
+-fx-padding: " 5px 50px"
+}
+
+.senha{
+ -fx-background-color: "#9d4edd";
+}
+
+.cadastrar{
+-fx-background-color: "#ff477e";
+}
